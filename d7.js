@@ -7,6 +7,7 @@ var book = {
     "Year Published": 2005
 }
 
+console.log(book);
 console.log(book.Author);
 book['Year Published'] = 2010;
 console.log(book);
@@ -26,7 +27,7 @@ var Employee = {
     Position: "Software developer",
     Salary: 20000
 }
-
+console.log(Employee);
 console.log(Employee.Position);
 Employee['Salary'] = 50000;
 console.log(Employee);
@@ -38,15 +39,15 @@ console.log();
 
 console.log('-------------------Task3--------------------------');
 console.log();
+
 // Task3
-console.log('task3')
 var Product = {
     Id : 1,
     Name : "Smart_Phone",
     Price: 15000,
     Category: "Smart Devices"
 }
-
+console.log(Product);
 console.log(Product.Price);
 Product['Category'] = 'Electronics';
 console.log(Product);
@@ -59,8 +60,8 @@ console.log();
 
 console.log('-------------------Task4--------------------------');
 console.log();
+
 // Task4
-console.log('Task4')
 var Car = {
     make : "Steel",
     model : 'Benz',
@@ -84,7 +85,6 @@ console.log('-------------------Task5--------------------------');
 console.log();
 
 // Task 5
-console.log('Task 5')
 var Student = {
     Name: 'Krishna',
     Age: 22,
@@ -106,8 +106,8 @@ console.log();
 
 console.log('-------------------Task6--------------------------');
 console.log();
+
 // Task 6
-console.log('Task6')
 const user = {
     username: "john_doe",
     profile: {
@@ -126,8 +126,9 @@ const user = {
     }
   };
 
-console.log(user.profile.address['city'])
-user.preferences['theme'] = 'Light';
+
+console.log("Accessed the city property from the object: ",user.profile.address['city'])
+user.preferences['theme'] = 'light';
 console.log(user);
 user.profile['Phone'] = '555-9876';
 console.log(user);
@@ -139,7 +140,6 @@ console.log();
 // Task 7
 console.log('-------------------Task7--------------------------');
 console.log();
-console.log('Task7');
 const company = {
     name: "Tech Solutions",
     employees: [
@@ -163,7 +163,7 @@ const company = {
     location: "New York"
   };
 
-console.log(company.employees[1].name);
+console.log("Accessed the Name property from the object: ",company.employees[1].name);
 company.employees[0].contact['phone'] = '555-1111'
 console.log(company);
 company.employees[0]['Department'] = 'Engineering';
